@@ -31,6 +31,7 @@
   - ...
 - Usage
 - Components/Structure
+  - JAVA with Spring-MVC framework, Hibernate ORM, MySQL (data storage), Tomcat 8.0 (web server), and AngularJS (UX).
 - Team
 - Acknowledgement
 - License

@@ -1,5 +1,15 @@
 # Resource
 
+## PreProject Preparation
+
+### Project Videos
+
+- [太阁x直播2 新兵训练营](https://www.bittiger.io/classpage/H9PG262bx3QTEbP5T)
+- [太阁微项目8 AppStore之Java前端（一）](https://www.bittiger.io/videos/Qfr9wdaKhztn2JaJj/pZZmpXCYiQ6c6ZRdm)
+- [太阁微项目8 AppStore之Java前端（二）](https://www.bittiger.io/videos/25c2nRbATxnd8FHbo/pZZmpXCYiQ6c6ZRdm)
+- [太阁微项目8 AppStore之Java前端（三）](https://www.bittiger.io/classpage/Acof4XCZC98BFHrhQ)
+
+
 **About README**
 
 - https://github.com/matiassingers/awesome-readme
