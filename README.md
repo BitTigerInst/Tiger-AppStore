@@ -15,9 +15,6 @@
 - License
 - Project Information
 
-### Template
-- [proposal_template](./proposal_template.md)
-
 ## 2. Readme
 ### When
 - After the project
