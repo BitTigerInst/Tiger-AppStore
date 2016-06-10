@@ -11,10 +11,10 @@ Create a simple app store web application. For your stack we suggest using the S
 - [ ] Set up running environment and learn related frameworks (spring etc.)
 - [ ] Create a web project and code web service
 - [ ] Design front-end layout with AngularJS and Bootstrap
+- [ ] Write the report for the project
 - [ ] (Optional) Use MongoDB directly instead of MySQL
 - [ ] (Optional) Enlarge the scope of the project: user management, category of apps and comments
 - [ ] (Optional) Realize a single page with AngularJS
-- [ ] Write the report for the project
 
 ### Time Schedule
 We divide our project into five phases: Phase 0, we learn the basic knowledge of web-development, including spring-mvc, spring and hibernate; Phase 1, we implement the most back-end functions of our AppStore; Phase 2, we design the front-end web page layout; Phase 3, we choose some optional functions to integrate into our AppStore; Phase 4, we summarize our project and finish the report of AppStore.
@@ -37,6 +37,6 @@ See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
 
 ## Project Information
 - category: full stack
-- team: Tiger IX
+- team: Team IX
 - description: One sentence description for your awesome project.
 - stack: angular, boostrap, java, mysql, spring_mvc, tomcat, jquery, css, html5
