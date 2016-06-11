@@ -38,5 +38,5 @@ See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
 ## Project Information
 - category: full stack
 - team: Team IX, [@JesseZhuang](https://github.com/JesseZhuang), [@chengchen886](https://github.com/chengchen886), [@ttylcc](https://github.com/ttylcc)
-- description: One sentence description for your awesome project.
+- description: Develop a simple app store web application with Java and Angular JS
 - stack: angular, boostrap, java, mysql, spring_mvc, tomcat, jquery, css, html5, maven/gradle, spring boot
