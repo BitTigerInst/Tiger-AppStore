@@ -1,26 +1,8 @@
-# Tiger-AppStore
-太阁X项目四期9组-AppStore项目
+# Tiger-AppStore 太阁X项目四期9组-AppStore项目
 
-## 1. Proposal
+## Description
 
-### When
-- Before the project
-
-### How
-- Description
-- Plan
-  - Todo List
-  - Time Schedule
-- Resource
-- License
-- Project Information
-
-### Template
-- [proposal_template](./proposal_template.md)
-
-## 2. Readme
-### When
-- After the project
+Please change username and password in resources/application.properties for MySQL database.
 
 ### How
 - Description
