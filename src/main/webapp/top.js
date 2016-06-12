@@ -24,7 +24,7 @@
 			  container.appList = data.data;
 			  container.appsToShow = container.appList[0];
 			  
-			  console.log("reveive array successfully");
+			  console.log("receive array successfully");
 		    });
 		  
 		  this.selectApp = function(app){ 
