@@ -27,7 +27,7 @@ public class AppController {
 	@Resource(name = "webapi") //@Autowired
 	private WebApi api;
 	
-	//-------------------Retrieve Single App_Info--------------------------------------------------------
+	//-------------------Retrieve Single App--------------------------------------------------------
 	@RequestMapping(value = "/app/{appid}", method = RequestMethod.GET)
 	public ResponseEntity<App_Info> getApp(@PathVariable("appid") String appid) {
 		System.out.println("Fetching appInfo with id " + appid);
@@ -73,11 +73,11 @@ public class AppController {
 		return new ResponseEntity<List<App_Info>>(appInfos, headers, HttpStatus.OK);
 	}
 	
-	//-------------------Create a App_Info--------------------------------------------------------
+	//-------------------Create a App--------------------------------------------------------
 	
 		@RequestMapping(value = "/appInfo/", method = RequestMethod.POST)
 		public ResponseEntity<App_Info> createApp(@RequestBody App_Info appInfo, UriComponentsBuilder ucBuilder) {
-			System.out.println("Creating App_Info " + appInfo.getTitle());
+			System.out.println("Creating App " + appInfo.getTitle());
 
 			if (this.api.getAppService().isExist(appInfo)) {
 				System.out.println("A appInfo with name " + appInfo.getTitle() + " already exist");
@@ -105,7 +105,7 @@ public class AppController {
 		}
 
 		
-		//------------------- Update a App_Info --------------------------------------------------------
+		//------------------- Update a App --------------------------------------------------------
 		
 		@RequestMapping(value = "/appInfo/{appid}", method = RequestMethod.PUT)
 		public ResponseEntity<App_Info> updateApp(@PathVariable("appid") String appid, @RequestBody App_Info appInfo) {
@@ -114,7 +114,7 @@ public class AppController {
 			App_Info currentAppInfo = this.api.getAppService().readApp(appid);
 			
 			if (currentAppInfo ==null) {
-				System.out.println("App_Info with id " + appid + " not found");
+				System.out.println("App with id " + appid + " not found");
 				return new ResponseEntity<App_Info>(HttpStatus.NOT_FOUND);
 			}else if(appid.equals(appInfo.getAppid()))
 				return new ResponseEntity<App_Info>(HttpStatus.CONFLICT);
@@ -123,19 +123,19 @@ public class AppController {
 			return new ResponseEntity<App_Info>(currentAppInfo, HttpStatus.OK);
 		}
 
-		//------------------- Delete a App_Info --------------------------------------------------------
+		//------------------- Delete a App --------------------------------------------------------
 		
 		@RequestMapping(value = "/appInfo/{appid}", method = RequestMethod.DELETE)
-		public ResponseEntity<App_Info> deleteApp(@RequestBody App_Info appInfo) {//@RequestBody App_Info appInfo --> 400 bad request, instead please use @PathVariable("appid") String appid
-			//App_Info appInfo = new App_Info();
+		public ResponseEntity<App_Info> deleteApp(@RequestBody App_Info appInfo) {//@RequestBody App appInfo --> 400 bad request, instead please use @PathVariable("appid") String appid
+			//App appInfo = new App();
 			//appInfo.setAppid(appid);
 			System.out.println("\r\n"+ appInfo.getAppid());
 			String appid = appInfo.getAppid();
-			System.out.println("Fetching & Deleting App_Info with appid " + appInfo.getAppid());
+			System.out.println("Fetching & Deleting App with appid " + appInfo.getAppid());
 //
 			appInfo = this.api.getAppService().deleteApp(appInfo);
 			if (appInfo == null) {
-				System.out.println("Unable to delete. App_Info with id " + appid + " not found");
+				System.out.println("Unable to delete. App with id " + appid + " not found");
 				return new ResponseEntity<App_Info>(HttpStatus.NOT_FOUND);
 			}
 
