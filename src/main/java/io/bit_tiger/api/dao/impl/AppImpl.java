@@ -61,7 +61,7 @@ public class AppImpl implements AppDAO{
 	public boolean isAppExist(App_Info appInfo) {
 		// TODO Auto-generated method stub
 		String appid = appInfo.getAppid();
-		Query query = this.getSession().createQuery("select count(*) from App appInfo where appInfo.appid = :appid").setString("appid", appid);
+		Query query = this.getSession().createQuery("select count(*) from App_Info appInfo where appInfo.appid = :appid").setString("appid", appid);
 		long count = (long) query.uniqueResult();
 		return count == 1 ? true : false;
 	}
@@ -69,7 +69,7 @@ public class AppImpl implements AppDAO{
 	@Override
 	public List<App_Info> readTopApps(int topN) {
 		// TODO Auto-generated method stub
-		Query query = this.getSession().createQuery("from App app order by app.score desc").setMaxResults(topN);
+		Query query = this.getSession().createQuery("from App_Info appInfo order by appInfo.score desc").setMaxResults(topN);
 		List<App_Info> appInfos = (List<App_Info>)query.list();
 		return appInfos;
 	}
