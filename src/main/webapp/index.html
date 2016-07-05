@@ -58,6 +58,7 @@ table img{
 </head>
 <body>
 <div class="container-fluid">
+	<!--carousel div-->
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="carousel slide" id="carousel-762850" data-ride="carousel" >
@@ -111,7 +112,8 @@ table img{
 	</div>
 	<div class="row-fluid" ng-controller = "appList as appInfos">
 		<div class="span12">
-		
+
+			<!--top 10 app list-->
 			<div class="list-group" ng-show = "!appInfos.showApp">
 			
 				<a href="#" class="list-group-item active" >Top 10 Apps</a>
@@ -121,6 +123,7 @@ table img{
 							<td id = "show_appid" rowspan = "2">{{appInfo.appid}}</td>
 							<td id = "show_img" rowspan = "2"><img alt="app_img" ng-src="{{appInfo.thumbnail_url}}"/></td>
 							<td id = "show_appname" colspan="2">{{appInfo.title}}</td>
+							<!--calls selectApp function in top.js-->
 							<td id = "get_appdetail" rowspan="2"><button class="btn btn-primary" type="button" ng-click="appInfos.selectApp(appInfo)">GET</button> </td>
 						</tr>
 						<tr>

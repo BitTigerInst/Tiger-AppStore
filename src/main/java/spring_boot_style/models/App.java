@@ -24,6 +24,7 @@ public class App {
     private String thumbnailUrl;
     private String intro;
     private String developer;
+
     private String top5App;
 
     // default constructor necessary for hibernate to connect class with mysql database, avoid overriden
