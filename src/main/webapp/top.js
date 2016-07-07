@@ -34,7 +34,8 @@
 			  var request = {
 					  method: 'POST',
 //					  url: "http://localhost:8080/AppStore_1_3/app/getRecom/similarapp/",
-					  url: "http://localhost:8080/app/getRecom/similarapp/",
+//                    delete path getRecom to follow REST
+					  url: "http://localhost:8080/app/similarapp/",
 					  data: app.top5AppsArray,
 					  headers: {
 						'Accept': 'application/json',
