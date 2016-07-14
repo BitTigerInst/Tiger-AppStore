@@ -116,7 +116,7 @@ table img{
 			<!--top 10 app list-->
 			<div class="list-group" ng-show = "!appInfos.showApp">
 			
-				<a href="#" class="list-group-item active" >Top 10 Apps</a>
+				<a href="#" class="list-group-item active" >Top 20 Apps</a>
 				<div class="list-group-item" ng-repeat = "appInfo in appInfos.appList">
 					<table class="list-group-item-text">
 						<tr>
@@ -176,7 +176,7 @@ table img{
 									<a href ng-click="tab = 2">Developer</a>
 								</li>
 								<li >
-									<a href="{{appInfos.appToShow.url}}">Download</a>
+									<a href="{{appInfos.appToShow.url}}" target="_blank">Download</a>
 								</li>
 							</ul>
 						</section>
